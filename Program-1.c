@@ -10,20 +10,17 @@ int main()
     int count = 0;
 
     /* Input number from user */
-    printf("Enter any number: ");
+    printf("Enter an integer to count the no. of digits: ");
     scanf("%d", &num);
 
     /* Run loop till num is greater than 0 */
     do
     {
-        /* Increment digit count */
+        num=num/10;
         count++;
+    } while( num > 0);
 
-        /* Remove last digit of 'num' */
-        num /= 10;
-    } while(  != 0);
-
-    printf("Total digits: %d", );
+    printf("Total digits: %d", count);
 
     return 0;
 }
