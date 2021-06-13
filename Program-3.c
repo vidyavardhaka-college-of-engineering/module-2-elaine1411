@@ -13,7 +13,7 @@ int main()
 	do 
   {
 		printf("I Love VVCE ");
-		i++;
+		i + +;
 		// complete the statement
 	} while(i<=n);
 
