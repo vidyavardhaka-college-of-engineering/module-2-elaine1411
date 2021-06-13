@@ -6,7 +6,7 @@
 
 	int main()
 	{
-	  int a[10],i,n;
+	  int a[100],i,n;
 
 	  printf("Enter size of the array:\n");
 	  scanf("%d",&n);
@@ -22,6 +22,6 @@
     {
 	    printf("%d ",a[i]);
     }
-    
+
 	  return(0);
 	}
