@@ -4,31 +4,36 @@
 
 
 #include <stdio.h>
+
 int main()
 {
-  int array[100], search, c, n;
+  int array[100], search, i, n;
 
-  printf("Enter number of elements in the array, array elements and the key");
+  printf("Enter number of elements in the array:\n");
   scanf("%d", &n);
 
-  
-  for (c = 0; c < n; c++)
-    scanf("%d", &array[c]);
-
+ printf("Enter the array elements:\n");
+  for (i = 0; i < n; i++)
+  {
+    scanf("%d", &array[i]);
+  }
  
+ printf("Enter the element to be searched:\n");
   scanf("%d", &search);
 
-  for (c = 0; c < n; c++)
+  for (i = 0; i < n; i++)
   {
-    if (array[c] == search)    /* If required element is found */
+    if (array[i] == search)    /* If required element is found */
     {
-      //printf("%d is present at location %d", search, c+1);
-      printf("%d",c+1);
+      printf("%d is present at location %d\n", search, i+1);
       break;
     }
   }
-  if (c == n)
-    printf("%d is not present in the array", );
-
-  return 0;
+  
+  if (array[i]!=search)
+  {
+    printf("%d is not present in the array", search);
+  }
+ return 0;
 }
+
