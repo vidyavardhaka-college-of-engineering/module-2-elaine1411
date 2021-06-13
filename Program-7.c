@@ -18,7 +18,7 @@
 	    scanf("%d",&a[i]);//missing code
     }
 
-	  for(i=n-1;i>=0;i++)//missing code
+	  for(i=n-1;i>=0;i--)//missing code
     {
 	    printf("%d ",a[i]);
     }
